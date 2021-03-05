@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+	font-family: "Inconsolata", monospace;
+	background-color: #090B10;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+	background-color: #0F111A;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #24262e;
+	border-color: #0F111A;
+	border-width: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #44475a;
+}
+
+.system-button {
+	height: 32px;
+}
+/* line number area */
+#main .ace-tm .ace_gutter {
+	background-color: #0F111A;
+	border-right-color: #0F111A;
+}
+#main .ace_gutter-active-line {
+	background-color: rgba(71,75,102,0.161);
+}
+
+/* treeview */
+.treeview {
+	font-family: sans-serif;
+	margin: 0px 0px 0px 4px;
+	background-color: #090B10;
+	--treeview-background-color: #090B10;
+}
+.treeview .item, .treeview .items, .treeview .dir > .header {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-left: 0px;
+	background-color: var(--treeview-background-color);
+	color: #DDDDDD;
+}
+.treeview .items {
+	background-color: var(--treeview-background-color);
+	border-left: 20px solid #090B10;
+}
+.treeview .dir > .header:before, .treeview .item:before {
+	background-image: url(icons.png);
+	background-size: auto 100%;
+	background-color: var(--data-color, #DDDDDD);
+	padding: 0px 0px 0px 4px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* splitters */
+#splitter-td, .splitter-td {
+	border: none;
+	background: #090B10;
+}
+#misc-splitter-td {
+	background: #090B10;
+}
+/* hide the fact that the splitter goes all the way to the window border... again! */
+#splitter-td {
+	background: #090B10;
+}
+#splitter-td:before {
+	content: "";
+	background: #090B10;
+	position: relative;
+	top: 32px;
+	height: calc(100% - 32px);
+	width: 100%;
+	display: block;
+	box-shadow: 0 -0.05em rgba(0,0,0,0.5);
+}
+/* tabs */
+.chrome-tabs.chrome-tabs-dark-theme {
+	background: none;
+	box-shadow: none;
+	background-color: #090B10;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab .chrome-tab-background > svg .chrome-tab-background {
+	fill: #1F2233;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab:not(.chrome-tab-current):hover .chrome-tab-background > svg .chrome-tab-background {
+	fill: #44475a;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tab.chrome-tab-current .chrome-tab-background > svg .chrome-tab-background {
+	fill: #1F2233;
+}
+.chrome-tabs.chrome-tabs-dark-theme .chrome-tabs-bottom-bar {
+	height: 4px;
+	background: #0D0F16;
+}
+
+/* popouts/preferences */
+.popout-window {
+	background: #0F111A;
+}
+.popout-window input[type="text"], .popout-window select {
+	background: black;
+}
+
+/* status bar styling */
+#main .ace_status-bar {
+	background-color: #0F111A;
+	/* simulates 1-pixel padding on top */
+	border-color: #0F111A;
+	box-shadow: 0 1px 0px #191A21 inset;
+}
+#main .ace_status-comp {
+	border-color: #191A21;
+}
+
+/* indents/print margin */
+#main .ace-tm .ace_print-margin {
+	background-color: #191A21;
+}
+#main .ace_indent-guide {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAOSURBVBhXYwCDpKIl/wEFLwJ4geLRfQAAAABJRU5ErkJggg==');
+	background-position: middle right;
+}
+
+/* auto-generated: */
+#main .ace-tm {
+	background-color: #0F111A;
+}
+#main .ace-tm .ace_selected-word {
+	background-color: #181A1F;
+}
+#main .ace-tm .ace_active-line {
+	background-color: #0A0C12;
+}
+#main .ace-tm .ace_selection {
+	background-color: #1F2233;
+}
+#main .ace-tm {
+	color: #FFFFFF;
+}
+#main .ace-tm .ace_comment,
+#main .ace-tm .ace_eventtext {
+	color: #6272A4;
+}
+#main .ace-tm .ace_eventname {
+	color: #FF79C6;
+}
+#main .ace-tm .ace_constant,
+#main .ace-tm .ace_extmacro {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_string {
+	color: #F1FA8C;
+}
+#main .ace-tm .ace_numeric,
+#main .ace-tm .ace_momenttime {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_variable {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_field,
+#main .ace-tm .ace_localfield {
+	color: #A2A5CC;
+}
+#main .ace-tm .ace_function,
+#main .ace-tm .ace_extfunction {
+	color: #72E58E;
+}
+#main .ace-tm .ace_asset.ace_script {
+	color: #72E58E;
+}
+#main .ace-tm .ace_asset,
+#main .ace-tm .ace_namespace,
+#main .ace-tm .ace_type {
+	color: #8BE9FD;
+}
+#main .ace-tm .ace_enum {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_enumfield {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_macro,
+#main .ace-tm .ace_macroname {
+	color: #FFB86C;
+}
+#main .ace-tm .ace_local,
+#main .ace-tm .ace_sublocal {
+	color: #BD93F9;
+}
+#main .ace-tm .ace_globalvar,
+#main .ace-tm .ace_globalfield {
+	color: #C7C6E5;
+}
+#main .ace-tm .ace_keyword,
+#main .ace-tm .ace_preproc {
+	color: #FF79C6;
+}
+#main .ace-tm .ace_curly.ace_paren {
+	color: #FF79C6;
+}
+
+#main .ace-tm .ace_gutter {
+	color: #6272A4;
+	font-style: normal;
+	font-weight: bold;
+}

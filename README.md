@@ -1,7 +1,7 @@
 # dracula-gmedit
 A modification of the Dracula theme for GMEdit
 
-![screenshot](https://user-images.githubusercontent.com/731492/65131151-67a4f180-da07-11e9-84aa-5d0da0b95ba1.png)
+![screenshot](https://raw.githubusercontent.com/DerJulien/darkercula-gmedit/main/screenshot.PNG)
 
 ## Install
 
