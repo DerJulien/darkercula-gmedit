@@ -48,13 +48,38 @@ body {
 	background-color: var(--treeview-background-color);
 	border-left: 20px solid #090B10;
 }
+.treeview .item, .treeview .dir .open > .header {
+	color: #EEEEEE;
+}
+.treeview .items, .treeview .item:before, .treeview .dir > .header, .treeview .dir .open > .header {
+	padding: 0px 4px 0px 0px;
+}
+.treeview .header:not(:active):hover, .treeview .item:not(:active):hover, 
+.treeview .header:hover, .treeview .item:hover {
+	background-color: var(--data-color, #1F2233);
+}
+.treeview .header:not(:active):hover > span, .treeview .item:not(:active):hover > span, 
+.treeview .header:hover > span, .treeview .item:hover > span {
+	background-color: rgba(0,0,0,0);
+}
+/*icons*/
 .treeview .dir > .header:before, .treeview .item:before {
 	background-image: url(icons.png);
 	background-size: auto 100%;
 	background-color: var(--data-color, #DDDDDD);
-	padding: 0px 0px 0px 4px;
+	padding: 0px 6px 0px 0px;
 	margin: 0px 0px 0px 0px;
+	width: 20px;
+	height: 20px;
+	top: 0px;
 }
+.treeview .dir > .header:before {
+	background-position: -24px 0px;
+}
+.treeview .dir .open > .header:before {
+	background-position: -48px 0px;
+}
+
 
 /* splitters */
 #splitter-td, .splitter-td {
